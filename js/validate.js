@@ -5,19 +5,29 @@ $().ready(function() {
 			user: {
 				required: true,
 				minlength: 2,
-				maxlength: 15
-	
-
-
+				maxlength: 15,
+				normalizer: function( value ) {
+	        			return $.trim( value );
+      			}
+				
 			},
 			pass: {
 				required: true,
-				minlength: 8
+				minlength: 8,
+				normalizer: function( value ) {
+	        			return $.trim( value );
+      			}
+				
 			},
 			
 		},
 			messages: {
-		      user:"Vui lòng nhập tên đăng nhập",
+		      user:{
+		      	required: "Vui lòng nhập tên đăng nhập",
+		      	minlength: "Tên đăng nhập tối thiểu 2 kí tự",
+		      	normalizer: "Tên đăng nhập không được để trống"
+		      	
+		      },
 
 		      
 		      pass: {
@@ -31,6 +41,7 @@ $().ready(function() {
 		      form.submit();
 			}
 	});
+
 });
 
 $().ready(function() {
@@ -40,22 +51,34 @@ $().ready(function() {
 			username: {
 				required: true,
 				minlength: 2,
-				maxlength: 15
+				maxlength: 15,
+				normalizer: function( value ) {
+	        			return $.trim( value );
+      			}
 				
 			},
 			password: {
 				required: true,
-				minlength: 8
+				minlength: 8,
+				normalizer: function( value ) {
+	        			return $.trim( value );
+      			}
 			},
 			repassword: {
 				required: true,
 				
 				minlength: 8,
-				equalTo: "#password"
+				equalTo: "#password",
+				normalizer: function( value ) {
+	        			return $.trim( value );
+      			}
 			},
 			email: {
 				required: true,	
-				email : true
+				email : true,
+				normalizer: function( value ) {
+	        			return $.trim( value );
+      			}
 			},
 		},
 			messages: {
