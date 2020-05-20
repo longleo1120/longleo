@@ -5,8 +5,8 @@ $().ready(function() {
 			user: {
 				required: true,
 				minlength: 2,
-				maxlength: 15,
-				regexb
+				maxlength: 15
+	
 
 
 			},
