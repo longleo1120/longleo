@@ -2,10 +2,11 @@ $().ready(function() {
 	$("form[name='loginForm']").validate({
 		
 		rules: {
-			user: {
+			email: {
 				required: true,
 				minlength: 2,
 				maxlength: 15,
+				email: true,
 				normalizer: function( value ) {
 	        			return $.trim( value );
       			}
@@ -22,10 +23,11 @@ $().ready(function() {
 			
 		},
 			messages: {
-		      user:{
+		      email:{
 		      	required: "Vui lòng nhập tên đăng nhập",
 		      	minlength: "Tên đăng nhập tối thiểu 2 kí tự",
-		      	normalizer: "Tên đăng nhập không được để trống"
+		      	normalizer: "Tên đăng nhập không được để trống",
+		      	email: "Vui lòng nhập đúng định dạng email"
 		      	
 		      },
 
@@ -97,7 +99,7 @@ $().ready(function() {
 		      },
 		      email: {
 		      	required: "Vui lòng nhập địa chỉ email",
-		      	email: "Sai định dạng email"	
+		      	email: "Vui lòng nhập đúng định dạng email"	
 		      }
 		    },
 		   
