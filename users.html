@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="js/validate.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-3" style="background-color: white">
+		        <div class="nav flex-column nav-pills user"  id="v-pills-tab" role="tablist" aria-orientation="vertical">
+			      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Quản lý tài khoản</a><hr>
+			      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a><hr>
+			      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a><hr>
+			      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a><hr>
+		    	</div>
+	  		</div>
+		  <div class="col-9">
+			    <div class="tab-content" id="v-pills-tabContent">
+				    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+				      	<div class="row">
+				      		<div class="form-info col-md-8" >
+						      	<div class="title" style="padding-bottom: 20px;" >
+						      		<h2>Thông tin tài khoản</h2>
+						      	</div>
+						      	<form>
+						      		
+						      			<div class="form-group">
+							      			<label>Email</label>
+							      			<input class="form-control" type="text" name="" value="" placeholder="" disabled>
+						      			</div>
+						      			<div class="form-group">
+							      			<label>Họ tên</label>
+							      			<input class="form-control" type="text" name="" value="" placeholder="">
+						      			</div>
+						      			<div class="form-group">
+						      				<input type="submit" class="btn btn-success" name="" value="Lưu">
+						      			</div>
+						      			
+						      			<h2 style="padding-top: 20px;">Đổi mật khẩu</h2>
+						      			<div class="form-group" style="padding-top: 20px">
+							      			<label>Mật khẩu hiện tại</label>
+							      			<input class="form-control" type="password" name="" value="" placeholder="">
+						      			</div>
+						      			
+						      			<div class="form-group">
+						      				<label>Mật khẩu mới </label>
+						      				<input type="password" class="form-control" name="" value="" placeholder="">
+						      			</div>
+						      			<div class="form-group">
+						      				<input type="submit" class="btn btn-success" name="" value="Lưu">
+						      			</div>
+						      		
+						      	</form>
+				      		</div>
+				      		<div class="user-right col-md-3">
+					      		<div class="img">
+					      			<img src="resourse/image/62-622819_photo-wallpaper-naruto-anime-art-hyuuga-hinata-naruto.jpg" alt="" width="160px" height="160px">
+					      		</div>
+					      		
+				      		</div>
+				      	</div>
+				    </div>
+
+			        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+			        	<div class="row">
+				      		<div class="form-info col-md-8" >
+						      	<div class="title" style="padding-bottom: 20px;" >
+						      		<h2>Thông tin tài khoản</h2>
+						      	</div>
+						      	<form>
+						      		
+						      			<div class="form-group">
+							      			<label>Email</label>
+							      			<input class="form-control" type="text" name="" value="" placeholder="">
+						      			</div>
+						      			<div class="form-group">
+							      			<label>Họ tên</label>
+							      			<input class="form-control" type="text" name="" value="" placeholder="">
+						      			</div>
+						      			<div class="form-group">
+						      				<span style="padding-right: 10px;">Giới tính</span>
+						      				<input type="radio" name="Sex" value="Male" placeholder="">Nam
+						      				<input type="radio" name="Sex" value="Female" placeholder="">Nữ
+						      			</div>
+						      			<div class="form-group">
+							      			<label>Số điện thoại</label>
+							      			<input class="form-control" type="text" name="" value="" placeholder="">
+						      			</div>
+						      			<h2 style="padding-top: 20px;">Đổi mật khẩu</h2>
+						      			<div class="form-group" style="padding-top: 20px">
+							      			<label>Mật khẩu hiện tại</label>
+							      			<input class="form-control" type="password" name="" value="" placeholder="">
+						      			</div>
+						      			
+						      			<div class="form-group">
+						      				<label>Mật khẩu mới </label>
+						      				<input type="password" class="form-control" name="" value="" placeholder="">
+						      			</div>
+						      			<div class="form-group">
+						      				<input type="submit" class="btn btn-success" name="" value="Lưu">
+						      			</div>
+						      		
+						      	</form>
+				      		</div>
+				      		<div class="user-right col-md-3">
+					      		<div class="img">
+					      			<img src="resourse/image/62-622819_photo-wallpaper-naruto-anime-art-hyuuga-hinata-naruto.jpg" alt="" width="160px" height="160px">
+					      		</div>
+					      		
+				      		</div>
+				      	</div>
+			        </div>
+			      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+			      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+			    </div>
+		  </div>
+	</div>
+	</div>
+	
+  	
+</body>
+</html>

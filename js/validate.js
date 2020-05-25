@@ -5,7 +5,7 @@ $().ready(function() {
 			email: {
 				required: true,
 				minlength: 2,
-				maxlength: 15,
+				
 				email: true,
 				normalizer: function( value ) {
 	        			return $.trim( value );

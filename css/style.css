@@ -205,4 +205,27 @@ form .error{
 }
 
 
-
+/*user css               */
+.user{
+    background-color: white;
+    padding-top: 20px;
+}
+.tab-content{
+    background-color: white
+}
+.form-info{
+    width: 500px;
+    margin-left: 20px;
+    background-color: white;
+    padding: 20px;  
+}
+.user-right{
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+.user-right .img{
+    width: 160px;
+    height: 160px;
+    
+}
