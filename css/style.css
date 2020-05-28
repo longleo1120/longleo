@@ -229,3 +229,8 @@ form .error{
     height: 160px;
     
 }
+.nav{
+    height: 100%;
+    min-height: 600px;
+}
+
