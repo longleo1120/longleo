@@ -3,28 +3,53 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	
 	<script src="js/validate.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
+	<div class="">
+		<nav class="navbar navbar-light">
+			<a href="" title="">Truyện tranh</a>
+		</nav>
 		<div class="row">
-			<div class="col-3" style="background-color: white;"  >
-		        <div class="nav flex-column nav-pills user"   id="v-pills-tab" role="tablist" aria-orientation="vertical">
-			      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Quản lý tài khoản</a><hr>
-			      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Quản lý chuyện</a><hr>
-			      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-qlchuyen" role="tab" aria-controls="v-pills-messages" aria-selected="false">Đăng Chuyện</a><hr>
-			      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-kiemduyet" role="tab" aria-controls="v-pills-settings" aria-selected="false">Kiểm Duyệt</a><hr>
-			      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-comments" role="tab" aria-controls="v-pills-settings" aria-selected="false">Lịch sử bình luận</a>
-		    	</div>
-	  		</div>
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+	  		<h1><a href="index.html" class="logo">Project Name</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="#"><span class="fa fa-home mr-3"></span> Homepage</a>
+          </li>
+          <li>
+              <a href="#"><span class="fa fa-user mr-3"></span> Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-sticky-note mr-3"></span> Friends</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-sticky-note mr-3"></span> Subcription</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Settings</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Information</a>
+          </li>
+        </ul>
+
+    	</nav>
 			<div class="col-9">
 				    <div class="tab-content" style="height: 100%; " id="v-pills-tabContent">
 					    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
@@ -79,7 +104,7 @@
 				        			</div>
 				        		<div class="row">
 				        			
-					        		<table >
+					        		<table class="table-responsive">
 					        			<tr>
 					        				<td>Id</td>
 					        				<td>Tên chuyện</td>
@@ -96,7 +121,7 @@
 				        <div class="tab-pane fade" id="v-pills-qlchuyen" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 				      		<div class="container-fluid" style="padding-left: 50px; padding-top: 20px;">
 				      			<div class="row">
-				      				<form class="form-group">
+				      				<form class="form-group embed-responsive">
 				      				 	<div class="title">
 				      				 		<h2>Đăng chuyện</h2>
 				      				 	</div>
@@ -117,7 +142,7 @@
 					    		<div class="title">
 				        				<h2>Lịch Sử Bình Luận</h2>
 				        			</div>
-					      		<div class="row">
+					      		<div class="row table-responsive">
 					      			<table class="form-group"  style="margin-top:  20px; text-align: center;">
 					      				
 					      				<tr>
@@ -160,6 +185,7 @@
 		</div>
 	</div>
 	
-  	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>  	
+<script src="js/main.js"></script>
 </body>
 </html>

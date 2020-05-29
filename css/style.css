@@ -207,7 +207,7 @@ form .error{
 
 /*user css               */
 .user{
-    background-color: white;
+    /*background-color: white;*/
     padding-top: 20px;
 }
 .tab-content{
@@ -215,7 +215,7 @@ form .error{
 }
 .form-info{
     width: 500px;
-    margin-left: 20px;
+   /* margin-left: 20px;*/
     background-color: white;
     padding: 20px;  
 }
